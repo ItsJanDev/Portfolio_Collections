@@ -22,11 +22,13 @@ import csharp from '../data/csharp.png';
 import dotnet from '../data/dotnet.png';
 import mvc from '../data/mvc.png';
 import mvvm from '../data/mvvm.png';
+import { TechStacks } from '../components';
 
 
 const Home = () => {
   return (
-    <div className="home relative p-8 grid items-center gap-8 mb-4 text-white text-base font-semibold max-w-7xl m-auto py-20 px-8">
+    <div className="mb-8 py-20"> 
+      <div className="home relative p-8 grid items-center gap-8 mb-4 text-white text-base font-semibold max-w-7xl m-auto py-20 px-8">
        <div className="content text-white">
             <span className="blur"></span>
             <span className="blur"></span>
@@ -42,27 +44,30 @@ const Home = () => {
         <div className="avatar relative">
             <img src={avatar} alt="Avatar"/>
         </div>
-        <div className="stacks-container">
-        <h3  id="btnstart" className="btn">Tech Stacks</h3>
-        <div className="flex max-w-md flex-wrap gap-8 mt-4">
-              <img src={csharp} alt="C#" className='text-stacks'/>
-              <img src={blazor} alt="BLAZOR" className='text-stacks'/>
-              <img src={xaml} alt="XAML" className='text-stacks'/>
-              <img src={sqlserver} alt="SQLSERVER" className='text-stacks'/>
-              <img src={wpf} alt="WPF" className='text-stacks'/>
-              <img src={dotnet} alt=".NET" className='text-stacks'/>
-              <img src={mvvm} alt="MVVM" className='text-stacks'/>
-              <img src={mvc} alt="MVC" className='text-stacks'/>
-              <img src={vstudio} alt="VISUAL STUDIO" className='text-stacks'/>
-              <img src={css} alt="CSS" className='text-stacks'/>
-              <img src={html} alt="HTML" className='text-stacks'/>
-              <img src={bootstrap} alt="BOOTSTRAP" className='text-stacks'/>
-              <img src={react} alt="REACT JS" className='text-stacks'/><img src={javascript} alt="JAVASCRIPT" className='text-stacks'/>
-              <img src={tailwind} alt="TAILWINDCSS" className='text-stacks'/>
-              <img src={vscode} alt="VS CODE" className='text-stacks'/>
+        
+        
+    </div>
+    <div className="stacks-container relative grid items-center gap-8 mb-4 text-white text-base font-semibold max-w-7xl m-auto px-8">
+        <h3  id="btnstart" className="btn text-2xl">Tech Stacks</h3>
+        <div className="flex flex-wrap gap-8 mt-4">
+              <TechStacks source={csharp} altname="C#"/>
+              <TechStacks source={blazor} altname="BLAZOR" className='text-stacks'/>
+              <TechStacks source={xaml} altname="XAML" className='text-stacks'/>
+              <TechStacks source={sqlserver} altname="SQLSERVER" className='text-stacks'/>
+              <TechStacks source={wpf} altname="WPF" className='text-stacks'/>
+              <TechStacks source={dotnet} altname=".NET" className='text-stacks'/>
+              <TechStacks source={mvvm} altname="MVVM" className='text-stacks'/>
+              <TechStacks source={mvc} altname="MVC" className='text-stacks'/>
+              <TechStacks source={vstudio} altname="VISUAL STUDIO" className='text-stacks'/>
+              <TechStacks source={css} altname="CSS" className='text-stacks'/>
+              <TechStacks source={html} altname="HTML" className='text-stacks'/>
+              <TechStacks source={bootstrap} altname="BOOTSTRAP" className='text-stacks'/>
+              <TechStacks source={react} altname="REACT JS" className='text-stacks'/>
+              <TechStacks source={javascript} altname="JAVASCRIPT" className='text-stacks'/>
+              <TechStacks source={tailwind} altname="TAILWIND CSS" className='text-stacks'/>
+              <TechStacks source={vscode} altname="VS CODE" className='text-stacks'/>
             </div>
         </div>
-        
     </div>
     
   )

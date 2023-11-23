@@ -64,11 +64,20 @@ body{
     opacity: 0.2;
     z-index: -100;
 }
+
+.stacks-container{
+    align-items: center;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 .text-stacks{
     width: 50px;
     height: 50px;
     max-width: 50px;
 }
+
+
 
 .contact-page{
     grid-template-columns: 400px repeat(1, 1fr);
