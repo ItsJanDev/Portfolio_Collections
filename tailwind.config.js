@@ -19,7 +19,7 @@ module.exports = {
 
       },backgroundColor: {
           'btn-bg': '#1d4ed8',
-        }
+      }
     },
   },
   plugins: [],
