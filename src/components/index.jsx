@@ -3,3 +3,6 @@ export { default as Footer } from './Footer';
 export { default as Button } from './Button';
 export { default as TechStacks } from './TechStacks';
 export { default as ProductsTechStacks } from './ProductsTechStacks';
+export { default as Typewriter } from './Typewriter';
+
+

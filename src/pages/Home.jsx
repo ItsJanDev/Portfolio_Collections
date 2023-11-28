@@ -23,6 +23,7 @@ import dotnet from '../data/dotnet.png';
 import mvc from '../data/mvc.png';
 import mvvm from '../data/mvvm.png';
 import { TechStacks } from '../components';
+import { Typewriter } from '../components';
 
 
 const Home = () => {
@@ -35,8 +36,8 @@ const Home = () => {
             <h4 className="mb-4 text-base font-semibold">All you need is a software</h4>
             <h1 className="text-white mb-4 text-5xl font-bold">Hi. I'm 
               <span> Jan Lauren</span>, 
-              Software Developer</h1>
-            <p className="mb-8 ali">A passionate software developer based in Philippines with thorough knowledge of C# programming concepts, SDLC, testing and debugging methods, system design, and implementation, database system, including DB2 and relational databases, program documentation, web and desktop application development
+              <Typewriter /></h1>
+            <p className="mb-8 desc">A passionate software developer based in Philippines with thorough knowledge of C# programming concepts, SDLC, testing and debugging methods, system design, and implementation, database system, including DB2 and relational databases, program documentation, web and desktop application development
 </p>
             
             
@@ -49,7 +50,7 @@ const Home = () => {
     </div>
     <div className="stacks-container relative grid items-center gap-8 mb-4 text-white text-base font-semibold max-w-7xl m-auto px-8">
         <h3  id="btnstart" className="btn text-2xl">Tech Stacks</h3>
-        <div className="flex flex-wrap gap-8 mt-4">
+        <div className="flex flex-wrap gap-8 mt-4 ">
               <TechStacks source={csharp} altname="C#"/>
               <TechStacks source={blazor} altname="BLAZOR" className='text-stacks'/>
               <TechStacks source={xaml} altname="XAML" className='text-stacks'/>

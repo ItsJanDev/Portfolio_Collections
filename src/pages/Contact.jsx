@@ -2,6 +2,7 @@ import React from 'react';
 import { CiFacebook,CiPaperplane, CiPhone   } from "react-icons/ci";
 import { FaInstagram, FaLinkedin  } from "react-icons/fa";
 import { Button } from '../components';
+import { FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -17,6 +18,7 @@ const Contact = () => {
                         <a href="https://www.facebook.com/janlauren.manipol" target="_blank" rel="noreferrer"><CiFacebook/></a>
                         <a href="https://instagram.com/imjanlauren" target="_blank" rel="noreferrer"><FaInstagram/></a>
                         <a href="https://www.linkedin.com/in/jan-lauren-manipol-aa2749161/" target="_blank" rel="noreferrer"><FaLinkedin/></a>
+                        <a href="https://github.com/ItsJanDev" target="_blank" rel="noreferrer"><FaGithub/></a>
                     </div>
               
                     <Button color="white" bgColor={"#1d4ed8"} text="Download CV" borderRadius="10px" size="md"/>
@@ -27,7 +29,7 @@ const Contact = () => {
                         <input type="email" name="email" placeholder="Your Email" required/>
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                         {/* <Button color="white" bgColor={"#1d4ed8"} text="Submit" borderRadius="10px" size="md"/> */}
-                        <button class="btn bt-primary text-md p-3 hover:drop-shadow-xl text-white rounded-md bg-btn-bg"  type="submit">Submit</button>
+                        <button className="btn bt-primary text-md p-3 hover:drop-shadow-xl text-white rounded-md bg-btn-bg"  type="submit">Submit</button>
                     </form>
                 </div>
             </div>

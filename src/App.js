@@ -9,6 +9,9 @@ const App = () => {
     
     <div>
       <div> 
+          
+          {/* <NavBar/>
+          <NavBar2/> */}
           <NavBar/>
       </div>
       <div>
